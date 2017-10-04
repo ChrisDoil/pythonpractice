@@ -36,7 +36,7 @@ print(str(a + b) + "\n" + str(a - b) + "\n" + str(a * b))
 a, b = input_2()
 print(str(a // b) + "\n" + str(a / b))
 
-# 5
+# 5 Loops
 
 n = 5
 i = 0
@@ -45,3 +45,23 @@ while (i < n):
     i += 1
 
 print("\n".join(str((i **2)) for i in range(n)))
+
+# 6 Function
+
+def input_3():
+    return random.randint(1900, 10 ** 5)
+
+def is_leap(year):
+    leap = False
+    if year % 4 == 0:
+        leap = True
+        if year % 100 == 0:
+            leap = False
+            if year % 400 == 0:
+                leap = True
+
+    return leap
+
+year = int(input_3())
+print(year)
+print(is_leap(year))
