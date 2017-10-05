@@ -65,3 +65,7 @@ def is_leap(year):
 year = int(input_3())
 print(year)
 print(is_leap(year))
+
+# print function
+n = 7
+print("".join([str(i) for i in range(1, n + 1)]))
