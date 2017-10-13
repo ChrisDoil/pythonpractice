@@ -1,0 +1,9 @@
+import sys
+import random
+
+x, y, z, n = [random.randint(0, 10) for _ in range(4)]
+print(n)
+
+triple_arr = [[i, j, k] for i in range(x + 1) for j in range(y + 1) for k in range(z + 1) if ((i + j + k) != n)]
+print(len(triple_arr))
+print(triple_arr)
